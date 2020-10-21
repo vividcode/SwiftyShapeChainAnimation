@@ -6,24 +6,30 @@ Create geometric shapes and animate them seamlessly using simple interface.
 
 ## Example:
 
-//Create Shape Array
+`//Create Shape Array`
+
 `var shapes: [Shape] = [.triangle, .rectangle, .pentagon, .hexagon, .heptagon, .octagon, .nanogon, .decagon, .circle]`
 
-//Create + Configure ChainShapeLayer
+`//Create + Configure ChainShapeLayer`
+
 `let chainShapeLayer = ChainShapeLayer()`
 
-//Assuming chainShapeLayer is part of the UIView root layer's hierarchy
+`//Assuming chainShapeLayer is part of the UIView root layer's hierarchy`
+
 `chainShapeLayer.chainAnimations(shapes: shapes, bShouldReturnToFirstState: false, bIsInfinite: true)`
 
 or 
 
-//Create Shape Array
+`//Create Shape Array`
+
 `var shapes: [Shape] = [.triangle, .rectangle, .pentagon, .hexagon, .heptagon, .octagon, .nanogon, .decagon, .circle]`
 
-//Create + Configure ChainShapeLayer
+`//Create + Configure ChainShapeLayer`
+
 `let chainShapeLayer = ChainShapeLayer()`
 
-//Assuming chainShapeLayer is part of the UIView root layer's hierarchy
+`//Assuming chainShapeLayer is part of the UIView root layer's hierarchy`
+
 `chainShapeLayer.chainAnimations(shapes: shapes, bShouldReturnToFirstState: true, bIsInfinite: false)`
 
 
