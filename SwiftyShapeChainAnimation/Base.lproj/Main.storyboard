@@ -1,24 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftyShapeChainAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIF-bu-V1j">
+                                <rect key="frame" x="62" y="55" width="196" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gB0-zD-xCh"/>
+                                </constraints>
+                                <state key="normal" title="Round Robin Stop Animation">
+                                    <color key="titleColor" red="0.99709880640000004" green="0.99709880640000004" blue="0.99709880640000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="roundRobinAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5NQ-th-Toq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWt-WD-hhG">
+                                <rect key="frame" x="100.5" y="115" width="119" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DBZ-2S-jX9"/>
+                                </constraints>
+                                <state key="normal" title="Infinite Animation">
+                                    <color key="titleColor" red="0.99709880640000004" green="0.99709880640000004" blue="0.99709880640000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="infiniteAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCR-Ry-Zwy"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cxh-m8-jLY" userLabel="Animation View">
+                                <rect key="frame" x="64" y="188" width="192" height="192"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cxh-m8-jLY" secondAttribute="height" multiplier="1:1" id="gXK-Dj-GFY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jIF-bu-V1j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Yx-lz-gBC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jIF-bu-V1j" secondAttribute="trailing" constant="62" id="2Gc-qG-UP1"/>
+                            <constraint firstItem="GWt-WD-hhG" firstAttribute="top" secondItem="jIF-bu-V1j" secondAttribute="bottom" constant="30" id="3Pt-fU-5xl"/>
+                            <constraint firstItem="jIF-bu-V1j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="6jZ-bb-vYu"/>
+                            <constraint firstItem="Cxh-m8-jLY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E7m-fd-Fpr"/>
+                            <constraint firstItem="GWt-WD-hhG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PV8-JY-vFT"/>
+                            <constraint firstItem="jIF-bu-V1j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="ZM6-y9-V9l"/>
+                            <constraint firstItem="Cxh-m8-jLY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="o7s-FV-lBT"/>
+                            <constraint firstItem="Cxh-m8-jLY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="puv-bP-Yo6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="experimentalView" destination="Cxh-m8-jLY" id="Ueb-1m-lCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="129" y="96"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

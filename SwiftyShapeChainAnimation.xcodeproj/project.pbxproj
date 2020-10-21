@@ -13,6 +13,8 @@
 		840863972540CDCC00F51C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840863952540CDCC00F51C11 /* Main.storyboard */; };
 		840863992540CDCF00F51C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840863982540CDCF00F51C11 /* Assets.xcassets */; };
 		8408639C2540CDCF00F51C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408639A2540CDCF00F51C11 /* LaunchScreen.storyboard */; };
+		840863A52540CDE800F51C11 /* ChainShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840863A42540CDE800F51C11 /* ChainShapeLayer.swift */; };
+		840863A82540CE3000F51C11 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840863A72540CE3000F51C11 /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		840863982540CDCF00F51C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8408639B2540CDCF00F51C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8408639D2540CDCF00F51C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840863A42540CDE800F51C11 /* ChainShapeLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainShapeLayer.swift; sourceTree = "<group>"; };
+		840863A72540CE3000F51C11 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				840863982540CDCF00F51C11 /* Assets.xcassets */,
 				8408639A2540CDCF00F51C11 /* LaunchScreen.storyboard */,
 				8408639D2540CDCF00F51C11 /* Info.plist */,
+				840863A42540CDE800F51C11 /* ChainShapeLayer.swift */,
+				840863A72540CE3000F51C11 /* Shape.swift */,
 			);
 			path = SwiftyShapeChainAnimation;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840863A82540CE3000F51C11 /* Shape.swift in Sources */,
 				840863942540CDCC00F51C11 /* ViewController.swift in Sources */,
+				840863A52540CDE800F51C11 /* ChainShapeLayer.swift in Sources */,
 				840863902540CDCC00F51C11 /* AppDelegate.swift in Sources */,
 				840863922540CDCC00F51C11 /* SceneDelegate.swift in Sources */,
 			);
